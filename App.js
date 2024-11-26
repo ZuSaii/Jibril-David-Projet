@@ -1,16 +1,24 @@
 const signInButtonOne = document.querySelector('#signInButtonOne')
 const signUpButtonTwo = document.querySelector('#signUpButtonTwo')
+const signUpButtonOne = document.querySelector('#signUpButtonOne')
+const signInButtonTwo = document.querySelector('#signInButtonTwo')
+
 
 const signIn = document.querySelector('#signIn')
 const signUp = document.querySelector('#signUp')
 
-const signUpButtonOne = document.querySelector('signUpButtonOne')
 
-signUpButtonOne.preventDefault()
 
 console.log(signInButtonOne)
 console.log(signUpButtonTwo)
 
+signUpButtonOne.addEventListener('click', function(e) {
+    e.preventDefault()
+})
+
+signInButtonTwo.addEventListener('click', function(e) {
+    e.preventDefault()
+})
 
 signInButtonOne.addEventListener('click', function(e) {
     e.preventDefault()
@@ -25,6 +33,7 @@ signUpButtonTwo.addEventListener('click', function(e) {
 })
 
 
+
 // signInButtonOne.addEventListener('click', function (event) {
 //     event.preventDefault();
 //     signUp.style.display = "none";
@@ -36,3 +45,5 @@ signUpButtonTwo.addEventListener('click', function(e) {
 //     signIn.style.display = "none";
 //     signUp.style.display = "block";
 // });
+
+
