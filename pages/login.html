@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Taskify Login</title>
+
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/login.css">
+
+</head>
+
+<body>
+    <main>
+        <div id="signUp">
+            <form id="SignUpForm">
+                <legend>Sign Up</legend>
+                <div class="input-group">
+                    <label for="firstname"><img src="../image/user-svgrepo-com.svg" alt=""></label>
+                    <input id="firstname" name="firstname" type="text" autocomplete placeholder="First Name">
+                </div>
+                <div class="input-group">
+                    <label for="lastname"><img src="../image/user-svgrepo-com.svg" alt=""></label>
+                    <input id="lastname" name="lastname" type="text" autocomplete placeholder="Last Name">
+                </div>
+                <div class="input-group">
+                    <label for="email"><img src="../image/email-1572-svgrepo-com.svg" alt=""></label>
+                    <input id="email" name="email" type="email" autocomplete placeholder="Email">
+                </div>
+                <div class="input-group">
+                    <label for="password"><img src="../image/lock-svgrepo-com.svg" alt=""></label>
+                    <input id="password" type="password" name="password" autocomplete placeholder="Password">
+                </div>
+                <div class="input-group">
+                    <label for="confirmpassword"><img src="../image/lock-svgrepo-com.svg" alt=""></label>
+                    <input id="confirmpassword" type="password" name="confirmpassword" autocomplete
+                        placeholder="Confirm Password">
+                </div>
+                <button id="signUpButtonOne" type="submit">Sign Up</button>
+            </form>
+            <div class="sign-with-other-social">
+                <img src="../image/google-svgrepo-com.svg" alt="Google logo for link his google acount"> <img
+                    src="../image/logo-facebook-svgrepo-com.svg" alt="FaceBook logo for link his google acount">
+
+                <p>Already Have Account ?</p>
+                <button id="signInButtonOne">Sign In</button>
+            </div>
+        </div>
+        <div id="signIn" class="hidden">
+            <form id="signInForm">
+                <legend>Sign In</legend>
+                <div class="input-group">
+                    <label for="emailsignin"><img src="../image/email-1572-svgrepo-com.svg" alt=""></label>
+                    <input id="emailsignin" name="emailsignin" type="email" autocomplete placeholder="Email">
+                </div>
+                <div class="input-group">
+                    <label for="passwordsignin"><img src="../image/lock-svgrepo-com.svg" alt=""></label>
+                    <input id="passwordsignin" name="passwordsignin" type="password" autocomplete
+                        placeholder="Password">
+                </div>
+                <button id="signInButtonTwo" type="submit">Sign In</button>
+            </form>
+            <div class="sign-with-other-social">
+                <img src="../image/google-svgrepo-com.svg" alt="Google logo for link his google acount"> <img
+                    src="../image/logo-facebook-svgrepo-com.svg" alt="FaceBook logo for link his google acount">
+
+                <p>You Dont Have Account ?</p>
+
+                <button id="signUpButtonTwo">Sign Up</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="../App.js"></script>
+</body>
+
+</html>
